@@ -1,8 +1,11 @@
 <body>
-  <div class="container">
-    <header>
-       <h1>Daily Habits Checklist</h1>
-    </header>
+  <header>
+    <h1>Daily Habits Checklist ({{incompleteCount}})</h1>
+    <label class="edit-tasks">
+       <input type="checkbox" />
+       Edit Tasks
+    </label>
+  </header>
 
     <form class='new-task'>
         <input type="text" name="text" placeholder="Type to add new tasks" />
@@ -13,6 +16,5 @@
         {{>task}}
         {{/each}}
     </ul>
-  </div>
 </body>
 
