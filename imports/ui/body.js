@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
-import { Tasks } from '../api/tasks.js';
-import { state } from '../api/tasks.js';
+import { Tasks } from '../../collections/tasks.js';
+import { state } from '../../collections/tasks.js';
 
 import './tasks.js';
 import './body.html';
@@ -43,6 +43,11 @@ Template.body.events({
     'change .edit-tasks input'(event,instance) {
         console.log("Run");
         state.set('editTasks', event.target.checked);
+    },
+    'click .reset-tasks'(event,instance) {
+        console.log("resetting tasks");
+        Meteor.call('reset_tasks');
+            
     },
 });
 
