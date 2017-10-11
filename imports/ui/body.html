@@ -1,12 +1,14 @@
 <body>
   <header>
     <h1>Daily Habits Checklist ({{incompleteCount}})</h1>
+    Last: {{ last_tally}} Tasks Due:
+    {{remaining_time}}
     <label class="edit-tasks">
        <input type="checkbox" />
        Edit Tasks
     </label>
-    <label> <button class="reset-tasks">
-          Reset Completed Tasks
+    <label> <button class="tally-tasks">
+          Tally Completed Tasks
        </button>
     </label>
   </header>
