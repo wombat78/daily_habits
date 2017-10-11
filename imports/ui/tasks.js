@@ -5,6 +5,11 @@ import { state } from '../../collections/tasks.js';
 import './tasks.html';
 
 Template.task.helpers({
+    counts() {
+        if (this.success_count>0) {
+            return "("+this.success_count+")";
+        }
+    },
     editable() {
         //return true
         //#console.log("edit tasks");
