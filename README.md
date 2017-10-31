@@ -1,12 +1,23 @@
 OVERVIEW
 ========
-
 This daily habits app is based on the idea that it takes 60 days to consistently ingrain a positive habit. It allows us to add the maximum of one new habit a day, and to propose a 20 minute self improvement action.
+
+Implemented
+ - automatically tally after 27 hours.
+ - count the number of times habit is maintained
 
 Planned features
  - send notification or reminder if we have not done the job
  - make a daily score.
- - allow us to set a "reset timer" to indicate when we should clear the list for the next day
+ - keep long running stats on each habit
+ - summary page and notes for each habit
+ - edit summary description and notes for each habit
+ - graphical display for progress
+ - scoring and achievements
+ - social mode/challenge mode
+ - button for entering reflections
+ - task grouping and sorting, tag habits
+ - last update gets reset if we shut down the app. use a persistent store for this.
 
 QUICK HELP
 ==========
